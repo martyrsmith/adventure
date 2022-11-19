@@ -1,15 +1,34 @@
-function multiply(num1, num2) {
-    let total = num1 * num2;
-    return total
+
+function setUserName() {
+    const myName = prompt("What's your name?")
+    if (!myName){
+        setUserName()
+    } else {
+        localStorage.setItem("name", myName)
+        myHeading.textContent = `${myName}'s story`;
+    }
+
 }
 
-function fun() {
-    alert("beep")
-}
 
-
+const myButton = document.querySelector("button");
 const myHeading = document.querySelector("h1");
-myHeading.textContent = "Hello world!";
+
+
+// if (!localStorage.getItem("name")) {
+//     setUserName();
+// } else {
+//     const storedName = localStorage.getItem("name");
+//     myHeading.textContent = `${myName}'s story`;
+// }
+
+myButton.onclick = () => {
+    setUserName()
+}
+
+
+
+// myHeading.textContent = "Hello world!";
 
 
 const myImage = document.querySelector("img");
