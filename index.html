@@ -14,24 +14,26 @@
 
   <h1>Unknown's Story</h1>
 
-  <img class="bookImage" src="images/beautiful_pathway-wallpaper-640x480.jpg" alt="Tree" />
+  <img class="bookImage" id="bookImage" src="images/beautiful_pathway-wallpaper-640x480.jpg" alt="Tree" />
 
 
-  <p>Our story begins in a scenic park. Each turn will be full of:</p>
+  <p id="story">Our story begins in a scenic park. Each turn will be full of:</p>
 
   <ol>
-    <li>mystery</li>
-    <li>adventure</li>
-    <li>thrills</li>
+    <div id="one" class="button1" >mystery</div>
+    <div id="two" class="button1">adventure</div>
+    <div id="three" class="button1" >thrills</div>
   </ol>
 
 
   <!-- <a href="https://www.mozilla.org/en-US/about/manifesto/">Mozilla Manifesto</a> -->
 
 
-  <button>Change user</button>
+  <button id="user">Change user</button>
+  <button id="start">start</button>
 
-  <script src="scripts/main.js"></script>
+
+  <script src="scripts/main.js" defer></script>
 </body>
 
 </html>
